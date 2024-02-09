@@ -1,0 +1,13 @@
+services:
+  db:
+    image: bitnami/mysql:latest
+    container_name: dev-db
+    restart: always
+    tty: true
+    volumes:
+      - ./mysql:/bitnami/mysql/data
+    environment:
+      - MYSQL_DATABASE=nodedb
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - 3306:3306

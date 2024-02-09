@@ -24,5 +24,5 @@ export async function register(req: FastifyRequest, reply: FastifyReply) {
   });
   userListHtml += '</ul>';
 
-  return reply.status(201).header('Content-Type', 'text/html').send('<h1>Full Cy Rocks!!</h1>' + userListHtml);
+  return reply.status(201).header('Content-Type', 'text/html').send('<h1>Full Cycle Rocks!!</h1>' + userListHtml);
 }

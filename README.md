@@ -1,4 +1,6 @@
 Para rodar o app:
-  docker compose up
+ * docker compose up
+
+
 Porta disponivel:
-  8080
+ * 8080
